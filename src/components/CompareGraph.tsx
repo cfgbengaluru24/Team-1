@@ -27,44 +27,50 @@ const CompareGraph: React.FC<CompareGraphProps> = ({ baselineData, endlineData }
   const data = {
     labels,
     datasets: [
-      {
-        label: 'Baseline Income',
-        data: combinedData.map(data => data.baselineIncome),
-        borderColor: '#8884d8',
-        fill: false,
-      },
-      {
-        label: 'Endline Income',
-        data: combinedData.map(data => data.endlineIncome),
-        borderColor: '#82ca9d',
-        fill: false,
-      },
-      {
-        label: 'Baseline Expense',
-        data: combinedData.map(data => data.baselineExpense),
-        borderColor: '#ff7300',
-        fill: false,
-      },
-      {
-        label: 'Endline Expense',
-        data: combinedData.map(data => data.endlineExpense),
-        borderColor: '#ff0000',
-        fill: false,
-      },
-      {
-        label: 'Baseline Profit',
-        data: combinedData.map(data => data.baselineProfit),
-        borderColor: '#387908',
-        fill: false,
-      },
-      {
-        label: 'Endline Profit',
-        data: combinedData.map(data => data.endlineProfit),
-        borderColor: '#0000ff',
-        fill: false,
-      },
-    ],
-  };
+        {
+          label: 'Baseline Income',
+          data: combinedData.map(data => data.baselineIncome),
+          borderColor: '#8884d8',
+          fill: false,
+          borderDash: [5, 5], 
+        },
+        {
+          label: 'Endline Income',
+          data: combinedData.map(data => data.endlineIncome),
+          borderColor: '#8884d8',
+          fill: false,
+          borderDash: [], 
+        },
+        {
+          label: 'Baseline Expense',
+          data: combinedData.map(data => data.baselineExpense),
+          borderColor: '#ff7300',
+          fill: false,
+          borderDash: [5, 5], 
+        },
+        {
+          label: 'Endline Expense',
+          data: combinedData.map(data => data.endlineExpense),
+          borderColor: '#ff7300',
+          fill: false,
+          borderDash: [], 
+        },
+        {
+          label: 'Baseline Profit',
+          data: combinedData.map(data => data.baselineProfit),
+          borderColor: '#387908',
+          fill: false,
+          borderDash: [5, 5], 
+        },
+        {
+          label: 'Endline Profit',
+          data: combinedData.map(data => data.endlineProfit),
+          borderColor: '#387908',
+          fill: false,
+          borderDash: [], 
+        },
+      ],
+    };
 
   const options = {
     responsive: true,
