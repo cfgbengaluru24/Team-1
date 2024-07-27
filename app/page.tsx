@@ -15,7 +15,7 @@ export default async function HomePage() {
   return (
     <div className='w-screen h-fit p-10'>
       <h1 className='text-center text-3xl font-bold mb-5'>Our Impact</h1>
-      <div className='w-[100%] h-[25rem] flex justify-center items-center'>
+      <div className='w-[100%] h-[27rem] flex justify-center items-center'>
         <CompareGraph baselineData={baselineData} endlineData={endlineData} />
       </div>
       <div className="w-screen h-[40%] mt-20 flex justify-center items-center gap-[10rem]">
