@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Navigation from "./_components/Navigation";
+import Navigation from "../src/components/Navigation";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,9 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} h-screen`}>
         <Navigation />
-        <main>{children}</main>
+        <main className="h-full">{children}</main>
       </body>
     </html>
   );
