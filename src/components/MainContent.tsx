@@ -242,6 +242,21 @@ const learning_content = [
   },
 ];
 
+const customMessages = [
+  "Goal Setting Game and Tower Building Game",
+  "Wedding Card Game and Buying and Selling Game",
+  "Format Free, Market Visit and Formatted Market Visit",
+  "Need and Wants",
+  "Eatery Game",
+  "PMA and PMA Analysis",
+  "Market Strategy",
+  "PCA and Skills Training",
+  "Pilot Business and Customer Feedback",
+  "Branding and Promotion",
+  "Pricing",
+  "Business Development Plan"
+];
+
 // Use the props interface in the component
 const MainContent: React.FC<MainContentProps> = ({ activeNo }) => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -293,7 +308,7 @@ const MainContent: React.FC<MainContentProps> = ({ activeNo }) => {
         </div>
       </div>
       <p className="text-xl mb-16">
-        This is the main content area for module {activeNo}.
+        {customMessages[activeNo - 1]}
       </p>
       {/* Placeholder for video */}
       <div className="relative pb-9/16 mb-4">
