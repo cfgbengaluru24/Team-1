@@ -1,13 +1,11 @@
-import React from "react";
-import Sidebar from "../../src/components/Sidebar";
+import Sidebar from '../../src/components/Sidebar';
+import MainContent from '../../src/components/MainContent';
 
-export default function Page() {
-  //authenticated user
-  const user = "trainer A";
+export default function Home() {
   return (
-    <div className=" grid grid-cols-5 h-full">
+    <div className="h-screen flex">
       <Sidebar />
-      <div className=" col-span-4 bg-red-50">content</div>
+      <MainContent />
     </div>
   );
 }
