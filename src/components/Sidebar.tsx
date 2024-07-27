@@ -9,7 +9,7 @@ interface SidebarProps {
 // Use the props interface in the component
 const Sidebar: React.FC<SidebarProps> = ({ activeNo, setActiveNo }) => {
   return (
-    <div className="w-64 2xl:w-96  bg-gray-800 text-white p-4 h-full">
+    <div className="w-64 2xl:w-96  p-4 h-full border  border-r-gray-700 dark:border-none">
       <h1 className="text-2xl font-bold mb-4 text-center">MODULES</h1>
       <div className="flex flex-col gap-5 ">
         {Array.from({ length: 12 }, (_, index) => (
