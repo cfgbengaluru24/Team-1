@@ -35,7 +35,7 @@ const Quiz: React.FC<QuizProps> = ({ questions }) => {
   }, 0);
 
   return (
-    <div className="p-4 bg-gray-100 rounded-md shadow-md">
+    <div className="p-4 bg-gray-100 rounded-md shadow-md dark:bg-inherit">
       {showScore ? (
         <div>
           <h2 className="text-2xl font-bold">Your Score: {score}</h2>

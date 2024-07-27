@@ -7,7 +7,7 @@ import { useState } from "react";
 export default function Page() {
   const [activeNo, setActiveNo] = useState(1);
   return (
-    <div className="h-screen flex">
+    <div className="h-screen flex ">
       <Sidebar activeNo={activeNo} setActiveNo={setActiveNo} />
       <MainContent activeNo={activeNo} />
     </div>
