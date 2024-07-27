@@ -17,9 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} h-screen`}>
+      <body className={`${inter.className} min-h-screen flex flex-col`}>
         <Navigation />
-        <main className="h-full">{children}</main>
+        <main className="flex flex-1 overflow-hidden">{children}</main>
       </body>
     </html>
   );
