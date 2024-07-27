@@ -12,7 +12,31 @@ interface MainContentProps {
 
 const learning_content = [
   {
-    module_title: "module 1",
+    module_title: "Goal Setting & Tower Building",
+    content:
+      "This is some placeholder text beneath the video. You can use this space to provide additional information about the learning module, instructions, or any other relevant content.",
+    video_id: "dQw4w9WgXcQ",
+    questions: [
+      {
+        question: "What is the capital of France?",
+        options: ["Berlin", "Madrid", "Paris", "Rome"],
+        correctAnswer: "Paris",
+      },
+      {
+        question: "What is 2 + 2?",
+        options: ["3", "4", "5", "6"],
+        correctAnswer: "4",
+      },
+      {
+        question: "What is 2 + 3?",
+        options: ["3", "4", "5", "6"],
+        correctAnswer: "5",
+      },
+      // Add more questions as needed
+    ],
+  },
+  {
+    module_title: "Wedding Card and Buying and Selling Game",
     content:
       "This is some placeholder text beneath the video. You can use this space to provide additional information about the learning module, instructions, or any other relevant content.",
     video_id: "dQw4w9WgXcQ",
@@ -31,7 +55,7 @@ const learning_content = [
     ],
   },
   {
-    module_title: "module 2",
+    module_title: "Format free and formatted market visit",
     content:
       "This is some placeholder text beneath the video. You can use this space to provide additional information about the learning module, instructions, or any other relevant content.",
     video_id: "dQw4w9WgXcQ",
@@ -50,7 +74,7 @@ const learning_content = [
     ],
   },
   {
-    module_title: "module 3",
+    module_title: "Need and wants",
     content:
       "This is some placeholder text beneath the video. You can use this space to provide additional information about the learning module, instructions, or any other relevant content.",
     video_id: "dQw4w9WgXcQ",
@@ -69,26 +93,7 @@ const learning_content = [
     ],
   },
   {
-    module_title: "module 4",
-    content:
-      "This is some placeholder text beneath the video. You can use this space to provide additional information about the learning module, instructions, or any other relevant content.",
-    video_id: "dQw4w9WgXcQ",
-    questions: [
-      {
-        question: "What is the capital of France?",
-        options: ["Berlin", "Madrid", "Paris", "Rome"],
-        correctAnswer: "Paris",
-      },
-      {
-        question: "What is 2 + 2?",
-        options: ["3", "4", "5", "6"],
-        correctAnswer: "4",
-      },
-      // Add more questions as needed
-    ],
-  },
-  {
-    module_title: "module 5",
+    module_title: "Eatery Game",
     content:
       "This is some placeholder text beneath the video. You can use this space to provide additional information about the learning module, instructions, or any other relevant content.",
     video_id: "dQw4w9WgXcQ",
@@ -108,7 +113,7 @@ const learning_content = [
   },
 
   {
-    module_title: "module 6",
+    module_title: "PMA and PMA analysis",
     content:
       "This is some placeholder text beneath the video. You can use this space to provide additional information about the learning module, instructions, or any other relevant content.",
     video_id: "dQw4w9WgXcQ",
@@ -127,7 +132,7 @@ const learning_content = [
     ],
   },
   {
-    module_title: "module 7",
+    module_title: "Market Strategy",
     content:
       "This is some placeholder text beneath the video. You can use this space to provide additional information about the learning module, instructions, or any other relevant content.",
     video_id: "dQw4w9WgXcQ",
@@ -146,7 +151,7 @@ const learning_content = [
     ],
   },
   {
-    module_title: "module 8",
+    module_title: "PCA skills training",
     content:
       "This is some placeholder text beneath the video. You can use this space to provide additional information about the learning module, instructions, or any other relevant content.",
     video_id: "dQw4w9WgXcQ",
@@ -165,7 +170,7 @@ const learning_content = [
     ],
   },
   {
-    module_title: "module 9",
+    module_title: "Pilot Business Customer Feedback",
     content:
       "This is some placeholder text beneath the video. You can use this space to provide additional information about the learning module, instructions, or any other relevant content.",
     video_id: "dQw4w9WgXcQ",
@@ -184,7 +189,7 @@ const learning_content = [
     ],
   },
   {
-    module_title: "module 10",
+    module_title: "Branding Promotion",
     content:
       "This is some placeholder text beneath the video. You can use this space to provide additional information about the learning module, instructions, or any other relevant content.",
     video_id: "dQw4w9WgXcQ",
@@ -203,7 +208,7 @@ const learning_content = [
     ],
   },
   {
-    module_title: "module 11",
+    module_title: "Pricing",
     content:
       "This is some placeholder text beneath the video. You can use this space to provide additional information about the learning module, instructions, or any other relevant content.",
     video_id: "dQw4w9WgXcQ",
@@ -222,7 +227,7 @@ const learning_content = [
     ],
   },
   {
-    module_title: "module 5",
+    module_title: "Business Development Plan",
     content:
       "This is some placeholder text beneath the video. You can use this space to provide additional information about the learning module, instructions, or any other relevant content.",
     video_id: "dQw4w9WgXcQ",
@@ -242,6 +247,21 @@ const learning_content = [
   },
 ];
 
+const customMessages = [
+  "Goal Setting Game and Tower Building Game",
+  "Wedding Card Game and Buying and Selling Game",
+  "Format Free, Market Visit and Formatted Market Visit",
+  "Need and Wants",
+  "Eatery Game",
+  "PMA and PMA Analysis",
+  "Market Strategy",
+  "PCA and Skills Training",
+  "Pilot Business and Customer Feedback",
+  "Branding and Promotion",
+  "Pricing",
+  "Business Development Plan"
+];
+
 // Use the props interface in the component
 const MainContent: React.FC<MainContentProps> = ({ activeNo }) => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -254,7 +274,7 @@ const MainContent: React.FC<MainContentProps> = ({ activeNo }) => {
     <div className="flex-1 flex flex-col gap-16  p-8 overflow-auto ">
       <div className="flex justify-between items-center">
         <h1 className="text-3xl font-bold ">
-          Main Content - Module {activeNo}
+          {learning_content[activeNo - 1]["module_title"]}
         </h1>
         <div className="text-lg flex flex-col items-center">
           <Button variant="outline" onClick={toggleTheme} size={"icon"}>
@@ -293,7 +313,7 @@ const MainContent: React.FC<MainContentProps> = ({ activeNo }) => {
         </div>
       </div>
       <p className="text-xl mb-16">
-        This is the main content area for module {activeNo}.
+        {customMessages[activeNo - 1]}
       </p>
       {/* Placeholder for video */}
       <div className="relative pb-9/16 mb-4">
