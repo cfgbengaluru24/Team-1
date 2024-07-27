@@ -1,0 +1,43 @@
+{
+    "baselineData": [
+      {
+        "month": "January",
+        "baselineIncome": 1000,
+        "baselineExpense": 400,
+        "baselineProfit": 600,
+        "endlineIncome": 1500,
+        "endlineExpense": 500,
+        "endlineProfit": 1000
+      },
+      {
+        "month": "February",
+        "baselineIncome": 1100,
+        "baselineExpense": 450,
+        "baselineProfit": 650,
+        "endlineIncome": 1600,
+        "endlineExpense": 550,
+        "endlineProfit": 1050
+      }
+    ],
+    "endlineData": [
+      {
+        "month": "January",
+        "baselineIncome": 1000,
+        "baselineExpense": 400,
+        "baselineProfit": 600,
+        "endlineIncome": 1500,
+        "endlineExpense": 500,
+        "endlineProfit": 1000
+      },
+      {
+        "month": "February",
+        "baselineIncome": 1100,
+        "baselineExpense": 450,
+        "baselineProfit": 650,
+        "endlineIncome": 1600,
+        "endlineExpense": 550,
+        "endlineProfit": 1050
+      }
+    ]
+  }
+  
