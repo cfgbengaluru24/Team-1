@@ -12,10 +12,10 @@ interface MainContentProps {
 
 const learning_content = [
   {
-    module_title: "module 1",
+    module_title: "Goal Setting & Tower Building",
     content:
       "This is some placeholder text beneath the video. You can use this space to provide additional information about the learning module, instructions, or any other relevant content.",
-    video_id: "dQw4w9WgXcQ",
+    video_id: "eH0ZIkHBOoc",
     questions: [
       {
         question: "What is the capital of France?",
@@ -31,10 +31,10 @@ const learning_content = [
     ],
   },
   {
-    module_title: "module 2",
+    module_title: "Wedding Card and Buying and Selling Game",
     content:
       "This is some placeholder text beneath the video. You can use this space to provide additional information about the learning module, instructions, or any other relevant content.",
-    video_id: "dQw4w9WgXcQ",
+    video_id: "p8O1W82QUss",
     questions: [
       {
         question: "What is the capital of France?",
@@ -50,10 +50,10 @@ const learning_content = [
     ],
   },
   {
-    module_title: "module 3",
+    module_title: "Format free and formatted market visit",
     content:
       "This is some placeholder text beneath the video. You can use this space to provide additional information about the learning module, instructions, or any other relevant content.",
-    video_id: "dQw4w9WgXcQ",
+    video_id: "P6_nXyRFUMM",
     questions: [
       {
         question: "What is the capital of France?",
@@ -69,10 +69,10 @@ const learning_content = [
     ],
   },
   {
-    module_title: "module 4",
+    module_title: "Need and wants",
     content:
       "This is some placeholder text beneath the video. You can use this space to provide additional information about the learning module, instructions, or any other relevant content.",
-    video_id: "dQw4w9WgXcQ",
+    video_id: "aRcXutXvfmM",
     questions: [
       {
         question: "What is the capital of France?",
@@ -88,10 +88,10 @@ const learning_content = [
     ],
   },
   {
-    module_title: "module 5",
+    module_title: "Eatery Game",
     content:
       "This is some placeholder text beneath the video. You can use this space to provide additional information about the learning module, instructions, or any other relevant content.",
-    video_id: "dQw4w9WgXcQ",
+    video_id: "c7n_ST1kzR8",
     questions: [
       {
         question: "What is the capital of France?",
@@ -108,7 +108,83 @@ const learning_content = [
   },
 
   {
-    module_title: "module 6",
+    module_title: "PMA and PMA analysis",
+    content:
+      "This is some placeholder text beneath the video. You can use this space to provide additional information about the learning module, instructions, or any other relevant content.",
+    video_id: "l5BtCytNkrU",
+    questions: [
+      {
+        question: "What is the capital of France?",
+        options: ["Berlin", "Madrid", "Paris", "Rome"],
+        correctAnswer: "Paris",
+      },
+      {
+        question: "What is 2 + 2?",
+        options: ["3", "4", "5", "6"],
+        correctAnswer: "4",
+      },
+      // Add more questions as needed
+    ],
+  },
+  {
+    module_title: "Market Strategy",
+    content:
+      "This is some placeholder text beneath the video. You can use this space to provide additional information about the learning module, instructions, or any other relevant content.",
+    video_id: "bilOOPuAvTY",
+    questions: [
+      {
+        question: "What is the capital of France?",
+        options: ["Berlin", "Madrid", "Paris", "Rome"],
+        correctAnswer: "Paris",
+      },
+      {
+        question: "What is 2 + 2?",
+        options: ["3", "4", "5", "6"],
+        correctAnswer: "4",
+      },
+      // Add more questions as needed
+    ],
+  },
+  {
+    module_title: "PCA skills training",
+    content:
+      "This is some placeholder text beneath the video. You can use this space to provide additional information about the learning module, instructions, or any other relevant content.",
+    video_id: "m34dc2DmkbQ",
+    questions: [
+      {
+        question: "What is the capital of France?",
+        options: ["Berlin", "Madrid", "Paris", "Rome"],
+        correctAnswer: "Paris",
+      },
+      {
+        question: "What is 2 + 2?",
+        options: ["3", "4", "5", "6"],
+        correctAnswer: "4",
+      },
+      // Add more questions as needed
+    ],
+  },
+  {
+    module_title: "Pilot Business Customer Feedback",
+    content:
+      "This is some placeholder text beneath the video. You can use this space to provide additional information about the learning module, instructions, or any other relevant content.",
+    video_id: "6UZds0GJxKI",
+    questions: [
+      {
+        question: "What is the capital of France?",
+        options: ["Berlin", "Madrid", "Paris", "Rome"],
+        correctAnswer: "Paris",
+      },
+      {
+        question: "What is 2 + 2?",
+        options: ["3", "4", "5", "6"],
+        correctAnswer: "4",
+      },
+      // Add more questions as needed
+    ],
+  },
+  {
+    module_title: "Branding Promotion",
     content:
       "This is some placeholder text beneath the video. You can use this space to provide additional information about the learning module, instructions, or any other relevant content.",
     video_id: "dQw4w9WgXcQ",
@@ -127,7 +203,7 @@ const learning_content = [
     ],
   },
   {
-    module_title: "module 7",
+    module_title: "Pricing",
     content:
       "This is some placeholder text beneath the video. You can use this space to provide additional information about the learning module, instructions, or any other relevant content.",
     video_id: "dQw4w9WgXcQ",
@@ -146,83 +222,7 @@ const learning_content = [
     ],
   },
   {
-    module_title: "module 8",
-    content:
-      "This is some placeholder text beneath the video. You can use this space to provide additional information about the learning module, instructions, or any other relevant content.",
-    video_id: "dQw4w9WgXcQ",
-    questions: [
-      {
-        question: "What is the capital of France?",
-        options: ["Berlin", "Madrid", "Paris", "Rome"],
-        correctAnswer: "Paris",
-      },
-      {
-        question: "What is 2 + 2?",
-        options: ["3", "4", "5", "6"],
-        correctAnswer: "4",
-      },
-      // Add more questions as needed
-    ],
-  },
-  {
-    module_title: "module 9",
-    content:
-      "This is some placeholder text beneath the video. You can use this space to provide additional information about the learning module, instructions, or any other relevant content.",
-    video_id: "dQw4w9WgXcQ",
-    questions: [
-      {
-        question: "What is the capital of France?",
-        options: ["Berlin", "Madrid", "Paris", "Rome"],
-        correctAnswer: "Paris",
-      },
-      {
-        question: "What is 2 + 2?",
-        options: ["3", "4", "5", "6"],
-        correctAnswer: "4",
-      },
-      // Add more questions as needed
-    ],
-  },
-  {
-    module_title: "module 10",
-    content:
-      "This is some placeholder text beneath the video. You can use this space to provide additional information about the learning module, instructions, or any other relevant content.",
-    video_id: "dQw4w9WgXcQ",
-    questions: [
-      {
-        question: "What is the capital of France?",
-        options: ["Berlin", "Madrid", "Paris", "Rome"],
-        correctAnswer: "Paris",
-      },
-      {
-        question: "What is 2 + 2?",
-        options: ["3", "4", "5", "6"],
-        correctAnswer: "4",
-      },
-      // Add more questions as needed
-    ],
-  },
-  {
-    module_title: "module 11",
-    content:
-      "This is some placeholder text beneath the video. You can use this space to provide additional information about the learning module, instructions, or any other relevant content.",
-    video_id: "dQw4w9WgXcQ",
-    questions: [
-      {
-        question: "What is the capital of France?",
-        options: ["Berlin", "Madrid", "Paris", "Rome"],
-        correctAnswer: "Paris",
-      },
-      {
-        question: "What is 2 + 2?",
-        options: ["3", "4", "5", "6"],
-        correctAnswer: "4",
-      },
-      // Add more questions as needed
-    ],
-  },
-  {
-    module_title: "module 5",
+    module_title: "Business Development Plan",
     content:
       "This is some placeholder text beneath the video. You can use this space to provide additional information about the learning module, instructions, or any other relevant content.",
     video_id: "dQw4w9WgXcQ",
@@ -254,7 +254,7 @@ const MainContent: React.FC<MainContentProps> = ({ activeNo }) => {
     <div className="flex-1 flex flex-col gap-16  p-8 overflow-auto ">
       <div className="flex justify-between items-center">
         <h1 className="text-3xl font-bold ">
-          Main Content - Module {activeNo}
+          {learning_content[activeNo - 1]["module_title"]}
         </h1>
         <div className="text-lg flex flex-col items-center">
           <Button variant="outline" onClick={toggleTheme} size={"icon"}>
