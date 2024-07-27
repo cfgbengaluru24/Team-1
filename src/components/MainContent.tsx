@@ -27,6 +27,11 @@ const learning_content = [
         options: ["3", "4", "5", "6"],
         correctAnswer: "4",
       },
+      {
+        question: "What is 2 + 3?",
+        options: ["3", "4", "5", "6"],
+        correctAnswer: "5",
+      },
       // Add more questions as needed
     ],
   },
