@@ -14,29 +14,34 @@ interface Details {
 
 const VocDetailsCard: React.FC<Details> = ({ voc }) => {
   return (
-    <div className="max-w-sm mx-auto bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
-      <h2 className="text-2xl font-bold mb-2">{voc["JOB ROLE NAME"]}</h2>
-      <p className="text-gray-700 dark:text-gray-300">
-        <strong>CAAF Number:</strong> {voc["CAAF NUMBER"]}
-      </p>
-      <p className="text-gray-700 dark:text-gray-300">
-        <strong>District Name:</strong> {voc["DISTRICT NAME"]}
-      </p>
-      <p className="text-gray-700 dark:text-gray-300">
-        <strong>Address 1:</strong> {voc["ADDRESS1"]}
-      </p>
-      <p className="text-gray-700 dark:text-gray-300">
-        <strong>Address 2:</strong> {voc["ADDRESS2"]}
-      </p>
-      <p className="text-gray-700 dark:text-gray-300">
-        <strong>Training Center Name:</strong> {voc["TRAINING CENTER NAME"]}
-      </p>
-      <p className="text-gray-700 dark:text-gray-300">
-        <strong>VTP Name:</strong> {voc["VTP NAME"]}
-      </p>
-      <p className="text-gray-700 dark:text-gray-300">
-        <strong>VTP Number:</strong> {voc["VTP NUMBER"]}
-      </p>
+    <div className="min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 p-8">
+      <h1 className="text-2xl font-bold mb-4">Training Centers</h1>
+      <div className="grid grid-cols-1 gap-4">
+        <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
+          <h2 className="text-xl font-bold">{voc.JOB_ROLE_NAME}</h2>
+          <p>
+            <strong>VTP Number:</strong> {voc.VTP_NUMBER}
+          </p>
+          <p>
+            <strong>VTP Name:</strong> {voc.VTP_NAME}
+          </p>
+          <p>
+            <strong>District Name:</strong> {voc.DISTRICT_NAME}
+          </p>
+          <p>
+            <strong>CAAF Number:</strong> {voc.CAAF_NUMBER}
+          </p>
+          <p>
+            <strong>Training Center Name:</strong> {voc.TRAINING_CENTER_NAME}
+          </p>
+          <p>
+            <strong>Address 1:</strong> {voc.ADDRESS1}
+          </p>
+          <p>
+            <strong>Address 2:</strong> {voc.ADDRESS2}
+          </p>
+        </div>
+      </div>
     </div>
   );
 };
