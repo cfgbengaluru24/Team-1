@@ -1,9 +1,11 @@
-// components/ResourcePage.tsx
 "use client";
+// components/ResourcePage.tsx
 import { useState, ChangeEvent } from "react";
 import ResourceContent from "./ResourceContent";
 
 const ResourcePage = ({ items }) => {
+  console.log(items);
+  items = items.slice(0, 20);
   const [query, setQuery] = useState<string>("");
   const [suggestions, setSuggestions] = useState([]);
   const [voc, setVoc] = useState(null);
@@ -15,7 +17,7 @@ const ResourcePage = ({ items }) => {
 
     if (value.length > 0) {
       const filteredItems = items.filter((item) =>
-        item["JOB ROLE NAME"].toLowerCase().includes(value.toLowerCase())
+        item.JOB_ROLE_NAME.toLowerCase().includes(value.toLowerCase())
       );
       setSuggestions(filteredItems);
     } else {
@@ -25,7 +27,7 @@ const ResourcePage = ({ items }) => {
 
   return (
     <div className="flex min-h-screen w-full bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
-      <aside className=" w-96 bg-gray-200 dark:bg-gray-800 p-4">
+      <aside className=" w-[500px] bg-gray-200 dark:bg-gray-800 p-4">
         <div className="relative w-full max-w-md mx-auto">
           <input
             type="text"
@@ -41,12 +43,11 @@ const ResourcePage = ({ items }) => {
                   key={index}
                   className="p-2 hover:bg-gray-200 dark:hover:bg-gray-700 cursor-pointer text-gray-700"
                   onClick={() => {
-                    setQuery(item["VTP NAME"]);
-                    setSuggestions([]);
+                    setQuery(item?.JOB_ROLE_NAME);
                     setVoc(item);
                   }}
                 >
-                  {item["VTP NAME"]}
+                  {item.VTP_NAME + ", " + item?.DISTRICT_NAME}
                 </li>
               ))}
             </ul>

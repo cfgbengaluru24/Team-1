@@ -1,0 +1,13 @@
+{
+  "expo": {
+    "scheme": "acme",
+    "web": {
+      "bundler": "metro"
+    },
+    "name": "bpf-App",
+    "slug": "bpf-App",
+    "plugins": [
+      "expo-router"
+    ]
+  }
+}
