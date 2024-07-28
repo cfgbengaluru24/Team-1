@@ -13,7 +13,7 @@ export default async function HomePage() {
   const endlineData: MetricData[] = data.endlineData;
 
   return (
-    <div className='w-screen h-fit p-10'>
+    <div id="google_translate_element" className='w-screen h-fit p-10'>
       <h1 className='text-center text-3xl font-bold mb-5'>Our Impact</h1>
       <div className='w-[100%] h-[27rem] flex justify-center items-center'>
         <CompareGraph baselineData={baselineData} endlineData={endlineData} />
